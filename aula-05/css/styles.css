@@ -1,0 +1,65 @@
+/*
+-- principais
+*/
+
+html, body {
+  background: hsl(200, 0%, 80%);
+  font-family: 'Overpass', sans-serif;
+  
+}
+
+#main-content {
+  background-color: palegoldenrod;
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 75%;
+  padding: 50px;
+  border-radius: 0.5rem;
+  border: 10px solid orangered;
+}
+
+/* 
+-- texto
+*/
+
+h1 {
+  color: orangered;
+  font-size: 2rem;
+}
+
+p {
+  background-color: hsl(54, 77%, 75%);
+  color: dimgrey;
+  line-height: 1.5em;
+  font-weight: 400;
+}
+
+span {
+  text-decoration: underline wavy orangered;
+}
+
+.primeira {
+  background-color: limegreen;
+  height: 100px;
+  width: 500px;
+  margin: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px #777777;
+  border-bottom: 5px solid green;
+}
+
+.primeira:hover {
+  background-color: lightgreen;
+}
+
+.segunda {
+  background-color: turquoise;
+  height: 100px;
+  width: 500px;
+  padding: 10px;
+  display: block;
+  border-radius: 0.5rem;
+  border-bottom: 5px solid teal;
+}

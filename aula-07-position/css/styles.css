@@ -1,0 +1,35 @@
+.caixas {
+  color: white;
+  font-weight: 700;
+}
+
+.caixa1 {
+  background-color: indianred;
+  height: 200px;
+  width: 200px;
+}
+
+.caixa2 {
+  height: 200px;
+  width: 200px;
+  background-color: blueviolet;
+  position: relative; /*  relative to the original position */
+  bottom: 20px;
+  left: 20px;
+}
+
+.caixa3 {
+  background-color: goldenrod;
+  height: 200px;
+  width: 200px;
+}
+
+.chat {
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: teal;
+  margin: 1rem;
+}

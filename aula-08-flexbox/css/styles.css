@@ -1,0 +1,27 @@
+.caixas {
+  
+}
+
+.caixa {
+  color: white;
+  display: inline-block;
+  font-weight: 700;
+}
+
+.caixa1 {
+  background-color: indianred;
+  height: 200px;
+  width: 200px;
+}
+
+.caixa2 {
+  background-color: blueviolet;
+  height: 200px;
+  width: 200px;
+}
+
+.caixa3 {
+  background-color: goldenrod;
+  height: 200px;
+  width: 200px;
+}

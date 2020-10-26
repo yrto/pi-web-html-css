@@ -1,0 +1,120 @@
+/* navbar */
+
+.navbar {
+  background-color: black;
+  padding: 0 2rem;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  padding: 0.5rem;
+  background-color: crimson;
+  text-decoration: none;
+  color: white;
+  border-radius: 0.2rem;
+}
+
+.navbar .nav-list {
+  list-style: none;
+  height: 60px;
+  
+  display: flex;
+  align-items: center;
+}
+
+.navbar .nav-list li {
+  padding: 0.5rem;
+}
+
+.navbar .nav-list li a:hover {
+  border-bottom: 2px solid darkred;
+  position: relative;
+  top: -2px;
+}
+
+/* main */
+
+#main-content {
+  background-color: #333;
+  margin: 3rem auto;
+  padding: 1rem;
+  width: 90%;
+
+  display: flex;
+  justify-content: space-between;
+
+}
+
+#sidebar {
+  background-color: #444;
+  margin-left: 2rem;
+  padding: 1rem;
+  width: 30%;
+}
+
+#sidebar img {
+  margin: 0.5rem 0;
+  width: 100%;
+}
+
+.first-section {
+  background-color: #444;
+  width: 70%;
+  padding: 1rem;
+}
+
+/* container */
+
+.first-section .caixas {
+  display: flex;
+  flex-direction: row; /* row é o padrão */
+  flex-wrap: wrap ;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* itens */
+
+.caixa {
+  font-weight: 700;
+  height: 150px;
+  min-width: 150px;
+  border-radius: 0.2rem;
+  margin-right: 1rem;
+
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.caixa:last-child {
+  margin-right: 0;
+}
+
+.caixa1 {
+  background-color: darkred;
+}
+
+.caixa2 {
+  background-color: darkmagenta;
+}
+
+.caixa3 {
+  background-color: darkslateblue;
+}
+
+.caixa4 {
+  background-color: darkorange;
+}
+
+/* tipografia */
+
+h1, h2 {
+  margin-bottom: 1rem;
+}

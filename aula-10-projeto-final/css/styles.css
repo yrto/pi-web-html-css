@@ -1,12 +1,4 @@
-/* main */
-
-html, body {
-  background-color: #495464;
-  color: #f4f4f2;
-  font-family: 'Fira Sans', sans-serif;
-}
-
-/* navbar */
+/* ************************************** header */
 
 #header {
   margin: 0 auto;
@@ -81,6 +73,8 @@ html, body {
   padding: 0.75rem 1rem;
   text-decoration: none;
   position: relative;
+  top: 0;
+  transition: 100ms;
 }
 
 #header .profile .profile-content .button:hover {
@@ -89,6 +83,7 @@ html, body {
 
 #header .profile .profile-content .button:active {
   background-color: hsl(200, 63%, 45%);
+  top: 3px;
 }
 
 #header .profile .profile-image {
@@ -102,35 +97,39 @@ html, body {
   max-width: 240px;
 }
 
-/* recent posts */
+/* ************************************** main content */
 
-.highlight {
+#main-content .highlight {
   background-color: hsl(216, 16%, 42%);
 }
 
-.recent-posts {
-  margin: 1.75rem auto;
-  padding: 1.75rem;
-  max-width: 912px;
-}
-
-.recent-posts .recent-posts-intro {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-}
-
-.recent-posts .recent-posts-intro h4 {
+#main-content h4 {
   font-size: 1.25rem;
   font-weight: 400;
 }
 
-.recent-posts .recent-posts-intro a:hover {
+/* ************************************** section intro */
+
+.section-intro {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.75rem;
+}
+
+.section-intro a:hover {
   color: #f4f4f2;
 }
 
+/* ************************************** recent posts */
+
+.recent-posts {
+  margin: 1.75rem auto 0;
+  padding: 1.75rem;
+  max-width: 912px;
+}
+
 .recent-posts .recent-posts-cards {
-  margin-top: 1.75rem;
   display: flex;
 }
 
@@ -138,13 +137,16 @@ html, body {
   background-color: white;
   border-radius: 0.25rem;
   color: #495464;
-  padding: 1.75rem;
+  padding: 1.25rem;
   margin-right: 1.75rem;
+  position: relative;
+  transition: 150ms;
+  top: 0;
 }
 
 .recent-posts .recent-posts-cards .card:hover {
-  background-color: #eee;
-  color: #222;
+  top: -5px;
+  box-shadow: 0 5px 10px 0 hsl(216, 16%, 30%);
 }
 
 .recent-posts .recent-posts-cards .card:last-child {
@@ -164,12 +166,97 @@ html, body {
 }
 
 .recent-posts .recent-posts-cards .card .data span {
-  margin: 0 1.25rem;
+  margin: 0 1rem;
 }
 
-/* breaking point */
+/* ************************************** featured works */
+
+.featured-works {
+  margin: 0 auto;
+  padding: 1.75rem;
+  max-width: 912px;
+}
+
+.featured-works .featured-works-cards {
+  border-top: 1px solid hsl(216, 16%, 42%);
+}
+
+.featured-works .featured-works-cards .card {
+  border-bottom: 1px solid hsl(216, 16%, 42%);
+  color: #f4f4f2;
+  display: flex;
+  padding: 1.25rem;
+  align-items: center;
+}
+
+.featured-works .featured-works-cards .card:hover {
+  background-color: hsl(216, 16%, 38%);
+}
+
+.featured-works .featured-works-cards .card h3 {
+  font-size: 1.75rem;
+}
+
+.featured-works .featured-works-cards .card img {
+  width: 33%;
+  margin-right: 1rem;
+}
+
+.featured-works .featured-works-cards .card p {
+  margin-top: 1rem;
+}
+
+.featured-works .featured-works-cards .card .data {
+  color: hsl(216, 16%, 66%);
+}
+
+.featured-works .featured-works-cards .card .data span {
+  background-color: white;
+  border-radius: 1rem;
+  color: #495464;
+  font-weight: 700;
+  margin-right: 1rem;
+  padding: 0.125rem 0.5rem;
+}
+
+/* ************************************** footer */
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3.5rem;
+  text-align: center;
+}
+
+#footer .social-links {
+  display: flex;
+  list-style: none;
+  margin-bottom: 1.75rem;
+  font-size: 2rem;
+}
+
+#footer .social-links li a {
+  margin: 0 0.625rem;
+  color: #f4f4f2;
+  bottom: 0;
+  position: relative;
+  transition: 150ms;
+}
+
+#footer .social-links li a:hover {
+  bottom: 3px;
+}
+
+#footer p {
+  font-size: 0.875rem;
+}
+
+/* ************************************** breaking point */
 
 @media (max-width: 768px) {
+
+  /* ************************************** header */
 
   #header .navbar .nav-list {
     display: none;
@@ -203,4 +290,33 @@ html, body {
   #header .profile .profile-image img {
     max-width: 180px;
   }
+
+  /* ************************************** recent posts */
+
+  .recent-posts .recent-posts-cards {
+    flex-direction: column;
+  }
+
+  .recent-posts .recent-posts-cards .card {
+    margin-bottom: 1.75rem;
+    margin-right: 0;
+  }
+  
+  .recent-posts .recent-posts-cards .card:last-child {
+    margin-bottom: 0;
+  }
+
+  /* ************************************** featured works */
+
+  .featured-works .featured-works-cards .card {
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .featured-works .featured-works-cards .card img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
 }

@@ -7,8 +7,20 @@
   outline: none;
 }
 
+/* ************************************** root */
+
+html, body {
+  background-color: #495464;
+  color: #f4f4f2;
+  font-family: 'Fira Sans', sans-serif;
+}
+
 a {
   color: hsl(216, 16%, 66%);
   text-decoration: none;
   transition: 200ms;
+}
+
+p {
+  line-height: 1.375rem;
 }

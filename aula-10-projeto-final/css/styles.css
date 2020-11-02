@@ -52,10 +52,12 @@
 #header .profile .profile-content {
   width: 50%;
   margin-top: 1.75rem;
+  margin-right: 1.75rem;
 }
 
 #header .profile .profile-content h1 {
   font-size: 2.5rem;
+  font-weight: 800;
 }
 
 #header .profile .profile-content p {
@@ -74,16 +76,17 @@
   text-decoration: none;
   position: relative;
   top: 0;
-  transition: 100ms;
+  transition: 150ms;
 }
 
 #header .profile .profile-content .button:hover {
+  top: -3px;
   background-color: hsl(200, 63%, 50%);
 }
 
 #header .profile .profile-content .button:active {
+  top: 0;
   background-color: hsl(200, 63%, 45%);
-  top: 3px;
 }
 
 #header .profile .profile-image {
@@ -103,9 +106,10 @@
   background-color: hsl(216, 16%, 42%);
 }
 
-#main-content h4 {
-  font-size: 1.25rem;
-  font-weight: 400;
+#main-content .icon-left {
+  margin-right: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 /* ************************************** section intro */
@@ -115,6 +119,11 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 1.75rem;
+}
+
+.section-intro h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 
 .section-intro a:hover {
@@ -134,7 +143,7 @@
 }
 
 .recent-posts .recent-posts-cards .card {
-  background-color: white;
+  background-color: #f4f4f2;
   border-radius: 0.25rem;
   color: #495464;
   padding: 1.25rem;
@@ -145,8 +154,12 @@
 }
 
 .recent-posts .recent-posts-cards .card:hover {
-  top: -5px;
-  box-shadow: 0 5px 10px 0 hsl(216, 16%, 30%);
+  background-color: white;
+  top: -3px;
+}
+
+.recent-posts .recent-posts-cards .card:active {
+  top: 0;
 }
 
 .recent-posts .recent-posts-cards .card:last-child {
@@ -155,6 +168,7 @@
 
 .recent-posts .recent-posts-cards .card h3 {
   font-size: 1.5rem;
+  font-weight: 800;
 }
 
 .recent-posts .recent-posts-cards .card p {
@@ -162,11 +176,16 @@
 }
 
 .recent-posts .recent-posts-cards .card .data {
-  font-size: 1.125rem;
+  color: hsl(216, 16%, 66%);
 }
 
 .recent-posts .recent-posts-cards .card .data span {
-  margin: 0 1rem;
+  background-color: #495464;
+  border-radius: 1rem;
+  color: #f4f4f2;
+  font-weight: 700;
+  margin-right: 0.75rem;
+  padding: 0.125rem 0.5rem;
 }
 
 /* ************************************** featured works */
@@ -191,10 +210,12 @@
 
 .featured-works .featured-works-cards .card:hover {
   background-color: hsl(216, 16%, 38%);
+  color: white;
 }
 
 .featured-works .featured-works-cards .card h3 {
   font-size: 1.75rem;
+  font-weight: 800;
 }
 
 .featured-works .featured-works-cards .card img {
@@ -215,7 +236,7 @@
   border-radius: 1rem;
   color: #495464;
   font-weight: 700;
-  margin-right: 1rem;
+  margin-right: 0.75rem;
   padding: 0.125rem 0.5rem;
 }
 
@@ -227,6 +248,7 @@
   align-items: center;
   padding: 3.5rem;
   text-align: center;
+  margin-bottom: 1.75rem;
 }
 
 #footer .social-links {
@@ -246,6 +268,11 @@
 
 #footer .social-links li a:hover {
   bottom: 3px;
+  color: white;
+}
+
+#footer .social-links li a:active {
+  bottom: 0;
 }
 
 #footer p {
@@ -275,11 +302,12 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin-right: 0;
   }
 
   #header .profile .profile-content p {
     margin-top: 1.75rem;
-    max-width: 66%;
+    max-width: 80%;
     align-self: center;
   }
   
@@ -308,9 +336,22 @@
 
   /* ************************************** featured works */
 
+  .featured-works {
+    padding: 1.75rem 0;
+  }
+
+  .featured-works .section-intro {
+    padding: 0 1.75rem;
+  }
+  
+  .featured-works .featured-works-cards {
+    border-top: 1px solid hsl(216, 16%, 42%);
+  }
+
   .featured-works .featured-works-cards .card {
     flex-direction: column;
     align-items: baseline;
+    padding: 1.75rem;
   }
 
   .featured-works .featured-works-cards .card img {
